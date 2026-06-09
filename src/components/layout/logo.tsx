@@ -30,7 +30,7 @@ export function Logo({ className }: { className?: string }) {
       height={96}
       priority
       className={cn(
-        'size-14 rounded-full bg-[#090706] object-contain ring-1 ring-[#37D6D0]/55',
+        'size-9 rounded-full bg-[#090706] object-contain',
         className
       )}
     />
