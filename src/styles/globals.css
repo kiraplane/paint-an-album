@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-/* Chrono CCG Wiki - dark, data-dense card guide theme */
+/* Anime Card Farm Wiki - dark, data-dense Roblox card guide theme */
 
 :root {
   --font-noto-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
@@ -389,11 +389,11 @@ body {
 }
 
 /*
- * Chrono CCG theme colors
+ * Anime Card Farm theme colors
  */
 .theme-default {
-  --primary: #63e6dd;
-  --primary-foreground: #051316;
+  --primary: #67f7d3;
+  --primary-foreground: #07101c;
 }
 
 .theme-blue {

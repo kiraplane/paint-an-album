@@ -24,13 +24,13 @@ export function Logo({ className }: { className?: string }) {
   return (
     <Image
       src={logo}
-      alt="Chrono CCG Wiki logo"
-      title="Chrono CCG Wiki"
+      alt="Anime Card Farm Wiki logo"
+      title="Anime Card Farm Wiki"
       width={96}
       height={96}
       priority
       className={cn(
-        'h-9 w-auto rounded-sm bg-[#0A0D10] object-contain',
+        'h-9 w-auto rounded-sm bg-[#080D17] object-contain',
         className
       )}
     />

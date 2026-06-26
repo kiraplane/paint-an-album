@@ -43,23 +43,21 @@ const CLIENT_MESSAGE_NAMESPACES = [
 const MARKETING_NAVBAR_KEYS = [
   'home',
   'codes',
-  'tierList',
-  'rules',
-  'decks',
+  'packs',
+  'mutations',
   'cards',
-  'tools',
-  'syndicates',
   'discord',
   'guides',
   'download',
+  'updates',
 ] as const;
 
 const MARKETING_FOOTER_KEYS = ['tagline', 'wiki', 'guides', 'legal'] as const;
 const MARKETING_FOOTER_GUIDE_ITEM_KEYS = [
   'all',
   'beginner',
-  'priority',
-  'deckbuilding',
+  'offlineMoney',
+  'packs',
 ] as const;
 
 function pickKeys<T extends MessageMap, K extends readonly string[]>(

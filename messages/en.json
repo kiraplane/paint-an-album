@@ -1,8 +1,8 @@
 {
   "Metadata": {
-    "name": "Chrono CCG Wiki",
-    "title": "Chrono CCG Wiki - Guides, Codes, Decks and Rules",
-    "description": "Chrono CCG Wiki for open beta rules, Divers, Timelines, syndicates, decks, card lists, codes, Discord, Steam, and Epic guides."
+    "name": "Anime Card Farm Wiki",
+    "title": "Anime Card Farm Wiki - Codes, Packs, Cards and Roblox Guide",
+    "description": "Anime Card Farm Wiki for Roblox codes, packs, card upgrades, offline money, mutations, trait gems, Discord, and safe official links."
   },
   "Common": {
     "premium": "Premium",
@@ -54,7 +54,7 @@
   },
   "PricingPage": {
     "title": "Pricing",
-    "description": "Optional supporter plans for keeping Chrono CCG Wiki maintained",
+    "description": "Optional supporter plans for keeping Anime Card Farm Wiki maintained",
     "subtitle": "Simple support options for readers who want to help maintain source-checked guides and data updates",
     "monthly": "Monthly",
     "yearly": "Yearly",
@@ -80,11 +80,11 @@
   "PricePlans": {
     "free": {
       "name": "Free",
-      "description": "Browse Chrono CCG Wiki with no payment required",
+      "description": "Browse Anime Card Farm Wiki with no payment required",
       "features": {
-        "feature-1": "Chrono CCG code status and redemption notes",
-        "feature-2": "Rules, Divers, Timelines, and syndicate guidance",
-        "feature-3": "Guides for decks, codes, cards, Discord links, and beginner progression",
+        "feature-1": "Anime Card Farm code status and redemption notes",
+        "feature-2": "Packs, upgrades, offline money, and mutation guidance",
+        "feature-3": "Guides for codes, cards, Discord links, and beginner progression",
         "feature-4": "Core pages updated as game information changes"
       },
       "limits": {
@@ -99,7 +99,7 @@
       "description": "For readers who want to support ongoing guide updates",
       "features": {
         "feature-1": "Support site maintenance",
-        "feature-2": "Help fund future Chrono CCG data checks",
+        "feature-2": "Help fund future Anime Card Farm data checks",
         "feature-3": "Keep code and guide pages fresh",
         "feature-4": "Support cleaner walkthrough coverage",
         "feature-5": "Help improve page speed and hosting stability",
@@ -113,7 +113,7 @@
     },
     "max": {
       "name": "Backer",
-      "description": "For heavier support of Chrono CCG Wiki maintenance",
+      "description": "For heavier support of Anime Card Farm Wiki maintenance",
       "features": {
         "feature-1": "Support expanded guide coverage",
         "feature-2": "Help fund more frequent source reviews",
@@ -302,37 +302,32 @@
       "download": {
         "title": "Download"
       },
-      "rules": {
-        "title": "Rules"
+      "packs": {
+        "title": "Packs"
       },
-      "decks": {
-        "title": "Decks"
+      "mutations": {
+        "title": "Mutations"
       },
       "cards": {
         "title": "Cards"
       },
-      "tools": {
-        "title": "Tools"
-      },
-      "syndicates": {
-        "title": "Syndicates"
-      },
       "discord": {
         "title": "Discord"
+      },
+      "updates": {
+        "title": "Updates"
       }
     },
     "footer": {
-      "tagline": "An independent Chrono CCG Wiki for rules, Divers, Timelines, syndicates, decks, card lists, beta codes, and safe Steam or Epic access.",
+      "tagline": "An independent Anime Card Farm Wiki for Roblox codes, packs, card upgrades, offline money, mutations, and safe official links.",
       "wiki": {
         "title": "Wiki",
         "items": {
-          "rules": "Rules",
-          "syndicates": "Syndicates",
-          "decks": "Decks",
+          "packs": "Packs",
           "cards": "Cards",
-          "tools": "Tools",
+          "mutations": "Mutations",
           "codes": "Codes",
-          "tierList": "Meta Watch"
+          "updates": "Updates"
         }
       },
       "guides": {
@@ -340,8 +335,8 @@
         "items": {
           "all": "All Guides",
           "beginner": "Beginner Guide",
-          "priority": "Priority Guide",
-          "deckbuilding": "Deckbuilding Guide"
+          "offlineMoney": "Offline Money Guide",
+          "packs": "Packs Guide"
         }
       },
       "legal": {

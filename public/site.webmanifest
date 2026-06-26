@@ -1,11 +1,11 @@
 {
-  "name": "Chrono CCG Wiki",
-  "short_name": "Chrono CCG Wiki",
-  "description": "Chrono CCG Wiki for open beta rules, Divers, Timelines, syndicates, decks, card lists, codes, Discord, Steam, and Epic guides.",
+  "name": "Anime Card Farm Wiki",
+  "short_name": "ACF Wiki",
+  "description": "Anime Card Farm Wiki for Roblox codes, packs, card upgrades, offline money, mutations, trait gems, Discord, and safe official links.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0A0D10",
-  "theme_color": "#63E6DD",
+  "background_color": "#080D17",
+  "theme_color": "#67F7D3",
   "icons": [
     {
       "src": "/favicon-32x32.png",

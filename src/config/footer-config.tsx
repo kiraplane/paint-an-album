@@ -12,18 +12,8 @@ export function useFooterLinks(): NestedMenuItem[] {
       title: t('wiki.title'),
       items: [
         {
-          title: t('wiki.items.rules'),
-          href: Routes.Rules,
-          external: false,
-        },
-        {
-          title: t('wiki.items.syndicates'),
-          href: Routes.Syndicates,
-          external: false,
-        },
-        {
-          title: t('wiki.items.decks'),
-          href: Routes.Decks,
+          title: t('wiki.items.packs'),
+          href: Routes.Packs,
           external: false,
         },
         {
@@ -32,8 +22,8 @@ export function useFooterLinks(): NestedMenuItem[] {
           external: false,
         },
         {
-          title: t('wiki.items.tools'),
-          href: Routes.Tools,
+          title: t('wiki.items.mutations'),
+          href: Routes.Mutations,
           external: false,
         },
         {
@@ -57,13 +47,13 @@ export function useFooterLinks(): NestedMenuItem[] {
           external: false,
         },
         {
-          title: t('guides.items.priority'),
-          href: Routes.PriorityGuide,
+          title: t('guides.items.offlineMoney'),
+          href: Routes.OfflineMoneyGuide,
           external: false,
         },
         {
-          title: t('guides.items.deckbuilding'),
-          href: Routes.DeckbuildingGuide,
+          title: t('guides.items.packs'),
+          href: Routes.PacksGuide,
           external: false,
         },
       ],

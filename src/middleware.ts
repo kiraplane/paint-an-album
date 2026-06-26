@@ -23,21 +23,20 @@ const retiredPublicRouteRedirects: Array<{
   { pattern: /^\/settings(?:\/.*)?$/, target: '/' },
   { pattern: /^\/payment(?:\/.*)?$/, target: '/' },
   { pattern: /^\/units(?:\/.*)?$/, target: '/cards' },
-  { pattern: /^\/traits(?:\/.*)?$/, target: '/rules' },
-  { pattern: /^\/reroll\/?$/, target: '/guides/diver-deckbuilding-guide' },
-  { pattern: /^\/game-modes\/?$/, target: '/rules' },
-  { pattern: /^\/tierlist\/?$/, target: '/tier-list' },
-  { pattern: /^\/deck-builder\/?$/, target: '/decks' },
+  { pattern: /^\/traits(?:\/.*)?$/, target: '/mutations' },
+  { pattern: /^\/trait-gems\/?$/, target: '/mutations' },
+  { pattern: /^\/game-modes\/?$/, target: '/guides/beginner-guide' },
+  { pattern: /^\/tierlist\/?$/, target: '/guides/best-cards-watch-guide' },
+  { pattern: /^\/tier-list\/?$/, target: '/guides/best-cards-watch-guide' },
+  { pattern: /^\/best-cards\/?$/, target: '/guides/best-cards-watch-guide' },
   { pattern: /^\/cards-list\/?$/, target: '/cards' },
   { pattern: /^\/card-list\/?$/, target: '/cards' },
-  { pattern: /^\/chrono-ccg-codes\/?$/, target: '/codes' },
-  { pattern: /^\/chrono-ccg-code\/?$/, target: '/codes' },
-  { pattern: /^\/chrono-ccg-decks\/?$/, target: '/decks' },
-  { pattern: /^\/chrono-ccg-tier-list\/?$/, target: '/tier-list' },
-  { pattern: /^\/chrono-ccg-discord\/?$/, target: '/discord' },
+  { pattern: /^\/anime-card-farm-codes\/?$/, target: '/codes' },
+  { pattern: /^\/anime-card-farm-code\/?$/, target: '/codes' },
+  { pattern: /^\/anime-card-farm-packs\/?$/, target: '/packs' },
+  { pattern: /^\/anime-card-farm-discord\/?$/, target: '/discord' },
   { pattern: /^\/discord-server\/?$/, target: '/discord' },
-  { pattern: /^\/steam\/?$/, target: '/download' },
-  { pattern: /^\/epic\/?$/, target: '/download' },
+  { pattern: /^\/roblox\/?$/, target: '/download' },
 ];
 
 function getPathnameWithoutLocale(pathname: string, locales: string[]) {
@@ -64,8 +63,11 @@ export default async function middleware(req: NextRequest) {
   const hostHeader = req.headers.get('host');
   const hostname = hostHeader?.split(':')[0].toLowerCase();
   const forwardedProto = req.headers.get('x-forwarded-proto');
-  const productionHosts = new Set(['chronoccg.wiki', 'www.chronoccg.wiki']);
-  const canonicalHost = 'www.chronoccg.wiki';
+  const productionHosts = new Set([
+    'animecardfarm.wiki',
+    'www.animecardfarm.wiki',
+  ]);
+  const canonicalHost = 'www.animecardfarm.wiki';
 
   if (
     hostname &&

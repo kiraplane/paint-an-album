@@ -1,13 +1,12 @@
 基于当前这个项目的代码框架背后的模版，做一个新项目，是
-chrono ccg个游戏的攻略站。所以我希望满足用户的攻略相关的需求。网站的名称就叫
-Chrono CCG Wiki
-本项目网站的网址为：www.chronoccg.wiki
-网站的关键词要有Chrono CCG 、Chrono CCG wiki等
+anime card farm个游戏的攻略站。所以我希望满足用户的攻略相关的需求。网站的名称就叫
+anime card farm Wiki
+本项目网站的网址为：www.animecardfarm.wiki
+网站的关键词要有anime card farm 、anime card farm Wiki等
 
 1.请搜索下这个游戏，了解这个游戏的玩法、规则，然后基于这个游戏的长尾搜索词，看下我们应该如何做网站内容
 
-2.官方商店是：https://store.steampowered.com/app/4221310/Chrono_CCG/
-https://playchrono.com/ 这个是官网
+2.官方商店是：https://www.roblox.com/games/125039473548047/Anime-Card-Farm
 基于这个游戏的风格，给网站确定个配色。
 
 4.如果需要数据和icon或者图片静态资源，可以自行去一些攻略站和官网搜索

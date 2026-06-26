@@ -1,20 +1,20 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "main": ".open-next/worker.js",
-  "name": "chronoccg",
+  "name": "animecardfarm",
   "keep_vars": true,
   "compatibility_date": "2025-04-01",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   "routes": [
     {
-      "pattern": "chronoccg.wiki",
+      "pattern": "animecardfarm.wiki",
       "custom_domain": true,
-      "zone_name": "chronoccg.wiki"
+      "zone_name": "animecardfarm.wiki"
     },
     {
-      "pattern": "www.chronoccg.wiki",
+      "pattern": "www.animecardfarm.wiki",
       "custom_domain": true,
-      "zone_name": "chronoccg.wiki"
+      "zone_name": "animecardfarm.wiki"
     }
   ],
   "build": {

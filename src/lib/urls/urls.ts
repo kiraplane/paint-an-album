@@ -1,7 +1,7 @@
 import { routing } from '@/i18n/routing';
 import type { Locale } from 'next-intl';
 
-export const CANONICAL_BASE_URL = 'https://www.chronoccg.wiki';
+export const CANONICAL_BASE_URL = 'https://www.animecardfarm.wiki';
 
 function cleanBaseUrl(url: string) {
   return url.replace(/\/$/, '');
@@ -11,7 +11,7 @@ function isLocalBaseUrl(url?: string) {
   return !url || /localhost|127\.0\.0\.1|0\.0\.0\.0/.test(url);
 }
 
-function getChronoCcgBaseUrl(url?: string) {
+function getAnimeCardFarmBaseUrl(url?: string) {
   if (!url || isLocalBaseUrl(url)) {
     return undefined;
   }
@@ -19,11 +19,11 @@ function getChronoCcgBaseUrl(url?: string) {
   try {
     const parsedUrl = new URL(url);
     if (
-      parsedUrl.hostname === 'chronoccg.wiki' ||
-      parsedUrl.hostname === 'www.chronoccg.wiki'
+      parsedUrl.hostname === 'animecardfarm.wiki' ||
+      parsedUrl.hostname === 'www.animecardfarm.wiki'
     ) {
       parsedUrl.protocol = 'https:';
-      parsedUrl.hostname = 'www.chronoccg.wiki';
+      parsedUrl.hostname = 'www.animecardfarm.wiki';
       parsedUrl.port = '';
       parsedUrl.pathname = '';
       parsedUrl.search = '';
@@ -57,9 +57,9 @@ export function getBaseUrl(): string {
   const configuredBaseUrl =
     process.env.NEXT_PUBLIC_BASE_URL || process.env.BETTER_AUTH_URL;
 
-  const chronoBaseUrl = getChronoCcgBaseUrl(configuredBaseUrl);
-  if (chronoBaseUrl) {
-    return chronoBaseUrl;
+  const animeCardFarmBaseUrl = getAnimeCardFarmBaseUrl(configuredBaseUrl);
+  if (animeCardFarmBaseUrl) {
+    return animeCardFarmBaseUrl;
   }
 
   return getCanonicalBaseUrl();

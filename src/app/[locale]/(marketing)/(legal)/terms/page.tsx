@@ -10,9 +10,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   return constructMetadata({
-    title: 'Terms of Service | Chrono CCG Wiki',
+    title: 'Terms of Service | Anime Card Farm Wiki',
     description:
-      'Terms for using the unofficial Chrono CCG Wiki and guide site.',
+      'Terms for using the independent Anime Card Farm Wiki and Roblox guide site.',
     locale,
     pathname: '/terms',
   });
@@ -24,14 +24,14 @@ export default function TermsOfServicePage() {
       <Container className="max-w-3xl space-y-6 px-4">
         <h1 className="font-display text-4xl font-black">Terms of Service</h1>
         <p className="leading-8 text-[#CBD5E1]">
-          This site provides unofficial Chrono CCG guides, data notes, and
+          This site provides independent Anime Card Farm guides, data notes, and
           strategy content. It is not affiliated with, endorsed by, sponsored
-          by, or operated by Infinite or Bust Games Inc. or the official Chrono
-          CCG team.
+          by, or operated by Roblox, dream without the vale, or the official
+          Anime Card Farm team.
         </p>
         <p className="leading-8 text-[#CBD5E1]">
-          Game data can change quickly. Codes, deck rankings, card text, beta
-          rewards, patch notes, and strategy advice should be treated as
+          Game data can change quickly. Codes, card values, mutation notes,
+          rewards, update markers, and strategy advice should be treated as
           guidance, not official instructions.
         </p>
         <p className="leading-8 text-[#CBD5E1]">
@@ -40,7 +40,7 @@ export default function TermsOfServicePage() {
           platform terms.
         </p>
         <p className="leading-8 text-[#CBD5E1]">
-          Questions about these terms can be sent to hello@chronoccg.wiki.
+          Questions about these terms can be sent to hello@animecardfarm.wiki.
         </p>
       </Container>
     </div>

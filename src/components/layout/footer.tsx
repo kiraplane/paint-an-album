@@ -17,7 +17,7 @@ export function Footer({ className }: React.HTMLAttributes<HTMLElement>) {
   return (
     <footer
       className={cn(
-        'border-[#3A2A24] border-t bg-[#090706] text-[#FFF5EA]',
+        'border-[#27415F] border-t bg-[#080D17] text-[#F6FBFF]',
         className
       )}
     >
@@ -48,7 +48,7 @@ export function Footer({ className }: React.HTMLAttributes<HTMLElement>) {
                       target="_blank"
                       rel="noreferrer"
                       aria-label={link.title}
-                      className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-[#3A2A24] text-[#D5C6B7] hover:border-[#37D6D0] hover:bg-[#1D1511] hover:text-[#FFF5EA]"
+                      className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-[#27415F] text-[#B8C8D8] hover:border-[#67F7D3] hover:bg-[#101827] hover:text-[#F6FBFF]"
                     >
                       <span className="sr-only">{link.title}</span>
                       {link.icon ? link.icon : null}
@@ -123,7 +123,7 @@ export function Footer({ className }: React.HTMLAttributes<HTMLElement>) {
         </div>
       </Container>
 
-      <div className="border-[#3A2A24] border-t py-8">
+      <div className="border-[#27415F] border-t py-8">
         <Container className="px-4 flex items-center justify-between gap-x-4">
           <span className="text-muted-foreground text-sm">
             &copy; {new Date().getFullYear()} {t('Metadata.name')} All Rights
@@ -131,8 +131,8 @@ export function Footer({ className }: React.HTMLAttributes<HTMLElement>) {
           </span>
 
           <span className="text-muted-foreground text-sm">
-            Independent guide site. Not affiliated with Infinite or Bust Games
-            Inc. or the official Chrono CCG team.
+            Independent guide site. Not affiliated with Roblox, dream without
+            the vale, or the official Anime Card Farm team.
           </span>
         </Container>
       </div>

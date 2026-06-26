@@ -20,18 +20,18 @@ export const websiteConfig: WebsiteConfig = {
   },
   metadata: {
     images: {
-      ogImage: '/chronoccg/og-image.jpg',
+      ogImage: '/animecardfarm/og-image.jpg',
       logoLight: '/logo.png',
       logoDark: '/logo.png',
     },
     social: {
       github: '',
-      twitter: 'https://x.com/ChronoCCG',
+      twitter: '',
       blueSky: '',
-      discord: 'https://discord.gg/chronoccg',
+      discord: 'https://discord.com/invite/xyBFac6R7q',
       mastodon: '',
       linkedin: '',
-      youtube: 'https://www.youtube.com/@ChronoCCG',
+      youtube: '',
     },
   },
   features: {
@@ -75,8 +75,8 @@ export const websiteConfig: WebsiteConfig = {
   },
   mail: {
     provider: 'resend',
-    fromEmail: 'Chrono CCG Wiki <hello@chronoccg.wiki>',
-    supportEmail: 'hello@chronoccg.wiki',
+    fromEmail: 'Anime Card Farm Wiki <hello@animecardfarm.wiki>',
+    supportEmail: 'hello@animecardfarm.wiki',
   },
   newsletter: {
     enable: false,

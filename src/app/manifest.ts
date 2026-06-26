@@ -23,12 +23,12 @@ import type { MetadataRoute } from 'next';
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: defaultMessages.Metadata.name,
-    short_name: 'Chrono CCG Wiki',
+    short_name: 'ACF Wiki',
     description: defaultMessages.Metadata.description,
     start_url: '/',
     display: 'standalone',
-    background_color: '#0A0D10',
-    theme_color: '#63E6DD',
+    background_color: '#080D17',
+    theme_color: '#67F7D3',
     icons: [
       {
         src: '/favicon-32x32.png',
