@@ -1,5 +1,7 @@
-import { CHECKED_AT, officialGameFacts } from './sources';
+import { officialGameFacts } from './sources';
 import type { GameCode } from './types';
+
+export const CODE_CHECKED_AT = '2026-06-29';
 
 export const activeCodes: GameCode[] = [
   {
@@ -7,7 +9,7 @@ export const activeCodes: GameCode[] = [
     reward: '1 Cash Potion, 1 Luck Potion, and 1 Mutation Potion',
     status: 'active',
     firstSeen: '2026-06-23',
-    lastChecked: CHECKED_AT,
+    lastChecked: CODE_CHECKED_AT,
     sourceLabel: 'Beebom, Roblox Den, RoCodes, GameRant, Deltia',
     confidence: 'high',
     notes:
@@ -18,7 +20,7 @@ export const activeCodes: GameCode[] = [
     reward: '1 Time II Potion and 100 Trait Gems',
     status: 'active',
     firstSeen: '2026-06-23',
-    lastChecked: CHECKED_AT,
+    lastChecked: CODE_CHECKED_AT,
     sourceLabel: 'Roblox Den, GameRant, Deltia, Reddit, MrGuider',
     confidence: 'medium',
     notes:
@@ -32,7 +34,7 @@ export const watchCodes: GameCode[] = [
     reward: 'Reported Time II Potion and Trait Gems variant',
     status: 'watch',
     firstSeen: '2026-06-23',
-    lastChecked: CHECKED_AT,
+    lastChecked: CODE_CHECKED_AT,
     sourceLabel: 'Beebom, RoCodes, Dexerto',
     confidence: 'watch',
     notes:
@@ -43,7 +45,7 @@ export const watchCodes: GameCode[] = [
 export const expiredCodes: GameCode[] = [];
 
 export const codeCheckSummary = {
-  checkedAt: CHECKED_AT,
+  checkedAt: CODE_CHECKED_AT,
   status:
     'Codes are source-checked from current code pages and search results, but this site has not game-tested them inside Roblox.',
   sourcesChecked: [
