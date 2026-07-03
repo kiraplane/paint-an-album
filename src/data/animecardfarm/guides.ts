@@ -60,6 +60,7 @@ export const relatedRouteLabels: Record<string, string> = {
   '/guides/packs-and-upgrades-guide': 'Packs and Upgrades Guide',
   '/guides/offline-money-guide': 'Offline Money Guide',
   '/guides/mutations-and-traits-guide': 'Mutations and Traits Guide',
+  '/guides/trait-reroll-farm': 'Trait Reroll Farm Guide',
   '/guides/wrong-game-codes-guide': 'Wrong-Game Codes Guide',
   '/guides/best-cards-watch-guide': 'Best Cards Watch Guide',
 };
@@ -423,6 +424,7 @@ export const guides: Guide[] = [
       '/mutations',
       '/codes',
       '/guides/codes-redeem-guide',
+      '/guides/trait-reroll-farm',
       '/guides/best-cards-watch-guide',
     ],
     body: [
@@ -470,6 +472,98 @@ export const guides: Guide[] = [
         question: 'Is there a reliable Anime Card Farm tier list?',
         answer:
           'Not enough reliable public data yet. Many current tier-list results are for Anime Card Clash, so use income and mutation criteria instead of copied rankings.',
+      },
+    ],
+  },
+  {
+    slug: 'trait-reroll-farm',
+    title: 'Anime Card Farm Trait Reroll Farm Guide',
+    seoTitle:
+      'Anime Card Farm Trait Reroll Farm - Trait Gems, Potions and Keeper Cards',
+    seoDescription:
+      'Farm Anime Card Farm trait rerolls safely by using codes, trait gems, potions, keeper-card checks, offline money, and wrong-game filters before spending resources.',
+    summary:
+      'A practical route for trait gems and rerolls: build income first, choose keeper cards, use boost windows deliberately, and avoid Anime Card Clash data when planning Farm traits.',
+    category: 'Mutations',
+    difficulty: 'Intermediate',
+    coverImageUrl: localCover,
+    publishedAt: CHECKED_AT,
+    updatedAt: CHECKED_AT,
+    sourceStrategy: 'manual_data',
+    sourceNotes:
+      'Created from Anime Card Farm official gameplay wording, current codes/traits long-tail demand, and wrong-game filtering against Anime Card Clash and Anime Card Collection results.',
+    videoSearchQueries: [
+      'Anime Card Farm trait reroll',
+      'Anime Card Farm trait gems',
+      'Anime Card Farm farm traits',
+    ],
+    tags: ['Traits', 'Trait Gems', 'Farm Route'],
+    relatedRoutes: [
+      '/mutations',
+      '/codes',
+      '/packs',
+      '/guides/codes-redeem-guide',
+      '/guides/mutations-and-traits-guide',
+      '/guides/offline-money-guide',
+    ],
+    body: [
+      {
+        heading: 'Farm money before farming traits',
+        paragraphs: [
+          'Trait rerolls are only useful when the card underneath is worth keeping. In Anime Card Farm, the official loop is pack opening, card upgrading, offline money, better packs, and rare boosted cards. That means reroll planning should start with income, not with the first trait button you see.',
+          'If your account cannot afford the next pack tier or cannot upgrade its current earners, spend active time stabilizing money first. A trait on a card that gets replaced quickly is usually weaker than a better income setup with saved trait gems.',
+        ],
+      },
+      {
+        heading: 'Pick keeper cards with four checks',
+        paragraphs: [
+          'A keeper card is the right place to consider trait gems. Before rerolling, check whether the card improves money now, belongs to your current or next pack tier, has a mutation or boost that changes its value, and has upgrade costs your account can support.',
+          'When a card passes those checks, trait investment becomes a progression tool. When it fails two or more checks, save the resource and keep farming packs or offline money.',
+        ],
+        bullets: [
+          'Income: the card improves money generation now.',
+          'Tier timing: the card is not about to be replaced by the next pack.',
+          'Boost value: mutation or trait potential changes the account plan.',
+          'Upgrade cost: you can improve it without freezing pack progress.',
+        ],
+      },
+      {
+        heading: 'Use codes and potions around a focused session',
+        paragraphs: [
+          'Current Anime Card Farm code sources center on potions and trait-related rewards. Redeem codes before a real session, then decide whether the reward supports pack opening, upgrading, or trait work. Activating every boost without a target wastes the part of the session where you can make decisions.',
+          'A better rhythm is to redeem, open or upgrade until a keeper card appears, then spend trait gems only if the card fits your current farm route. If no keeper appears, keep the trait resource for the next session.',
+        ],
+      },
+      {
+        heading: 'Do not import Clash trait advice',
+        paragraphs: [
+          'Search results can mix Anime Card Farm with Anime Card Clash and Anime Card Collection. Clash pages may mention towers, instant rolls, raids, or different card systems. Those terms are not proof for Farm trait values.',
+          'Use the Roblox place, game title, and creator as the final filter. If the guide is not clearly for Anime Card Farm by dream without the vale, treat its trait names and tier advice as unrelated until a reliable Farm-specific source confirms them.',
+        ],
+      },
+      {
+        heading: 'Make reroll decisions in small batches',
+        paragraphs: [
+          'Do not burn every trait gem in one frustrated session. Reroll in small batches, compare the result to your current income route, and stop when the card is good enough to move progression. Perfect traits matter less if the account still needs basic pack and upgrade momentum.',
+          'After a small batch, leave the game with your strongest money setup active. Offline income can fund the next pack or upgrade cycle, which gives you more chances to find a better trait target later.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'When should I reroll traits in Anime Card Farm?',
+        answer:
+          'Reroll only after you have a card that improves income, is not about to be replaced, and can still be upgraded without stalling pack progress.',
+      },
+      {
+        question: 'Should I spend trait gems from codes immediately?',
+        answer:
+          'Usually no. Redeem the code, then wait until you identify a keeper card or a focused pack session where the reward can produce real progress.',
+      },
+      {
+        question: 'Can Anime Card Clash trait guides be used here?',
+        answer:
+          'No. Anime Card Clash is a different Roblox game, so its trait and card advice should not be copied into Anime Card Farm.',
       },
     ],
   },

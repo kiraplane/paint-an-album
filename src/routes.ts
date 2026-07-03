@@ -26,6 +26,7 @@ export enum Routes {
   PacksGuide = '/guides/packs-and-upgrades-guide',
   OfflineMoneyGuide = '/guides/offline-money-guide',
   MutationsGuide = '/guides/mutations-and-traits-guide',
+  TraitRerollFarmGuide = '/guides/trait-reroll-farm',
   WrongGameGuide = '/guides/wrong-game-codes-guide',
   BestCardsGuide = '/guides/best-cards-watch-guide',
 

@@ -102,6 +102,13 @@ export function useNavbarLinks(): NestedMenuItem[] {
           external: false,
           icon: <Gem className="size-4" />,
         },
+        {
+          title: 'Trait Reroll Farm',
+          description: 'Spend trait gems only after keeper-card checks.',
+          href: Routes.TraitRerollFarmGuide,
+          external: false,
+          icon: <Gem className="size-4" />,
+        },
       ],
     },
     {
