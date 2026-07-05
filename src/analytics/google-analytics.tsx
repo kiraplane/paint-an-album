@@ -1,9 +1,32 @@
+import { getCloudflareContext } from '@opennextjs/cloudflare';
 import Script from 'next/script';
 
-const GOOGLE_ANALYTICS_ID = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID?.trim();
+function cleanEnvValue(value: string | undefined) {
+  return value?.trim().replace(/^['"]+|['"]+$/g, '') ?? '';
+}
+
+function readCloudflareEnv(name: string) {
+  try {
+    const env = getCloudflareContext().env as Record<string, unknown>;
+    const value = env[name];
+
+    return typeof value === 'string' ? cleanEnvValue(value) : '';
+  } catch {
+    return '';
+  }
+}
+
+function getGoogleAnalyticsId() {
+  return (
+    cleanEnvValue(process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID) ||
+    readCloudflareEnv('NEXT_PUBLIC_GOOGLE_ANALYTICS_ID')
+  );
+}
 
 export default function GoogleAnalytics() {
-  if (process.env.NODE_ENV !== 'production' || !GOOGLE_ANALYTICS_ID) {
+  const googleAnalyticsId = getGoogleAnalyticsId();
+
+  if (process.env.NODE_ENV !== 'production' || !googleAnalyticsId) {
     return null;
   }
 
@@ -12,7 +35,7 @@ export default function GoogleAnalytics() {
       <Script
         id="google-tag-js"
         async
-        src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
         strategy="beforeInteractive"
       />
       <Script
@@ -24,7 +47,7 @@ export default function GoogleAnalytics() {
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', '${GOOGLE_ANALYTICS_ID}');
+gtag('config', '${googleAnalyticsId}');
           `.trim(),
         }}
       />

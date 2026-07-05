@@ -7,6 +7,8 @@ import { Footer } from '@/components/layout/footer';
 import { Navbar } from '@/components/layout/navbar';
 import type { ReactNode } from 'react';
 
+export const dynamic = 'force-dynamic';
+
 export default function IceTycoon2Layout({
   children,
 }: {
