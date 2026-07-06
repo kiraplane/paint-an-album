@@ -1,11 +1,11 @@
 {
-  "name": "Ice Tycoon 2 Wiki",
-  "short_name": "IT2 Wiki",
-  "description": "Ice Tycoon 2 Wiki for Roblox codes status, gems, secrets, trophies, rebirths, items, badges, and safe official links.",
+  "name": "Paint an Album Wiki",
+  "short_name": "PAA Wiki",
+  "description": "Paint an Album Wiki for Roblox album search, clean block painting, autosave, gamepasses, codes status, and safe official links.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#07111F",
-  "theme_color": "#8BE9FD",
+  "background_color": "#140F17",
+  "theme_color": "#3ED7B5",
   "icons": [
     {
       "src": "/favicon-32x32.png",

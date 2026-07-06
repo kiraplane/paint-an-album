@@ -22,22 +22,37 @@ const retiredPublicRouteRedirects: Array<{
   { pattern: /^\/admin(?:\/.*)?$/, target: '/' },
   { pattern: /^\/settings(?:\/.*)?$/, target: '/' },
   { pattern: /^\/payment(?:\/.*)?$/, target: '/' },
-  { pattern: /^\/gems(?:\/.*)?$/, target: '/guides/all-gems-locations-guide' },
-  { pattern: /^\/trophies(?:\/.*)?$/, target: '/guides/all-trophies-guide' },
-  { pattern: /^\/secret-finder\/?$/, target: '/guides/all-secrets-guide' },
-  { pattern: /^\/rebirth\/?$/, target: '/rebirths' },
+  { pattern: /^\/gems(?:\/.*)?$/, target: '/album-search' },
+  { pattern: /^\/secrets(?:\/.*)?$/, target: '/how-to-play' },
+  {
+    pattern: /^\/trophies(?:\/.*)?$/,
+    target: '/guides/gallery-camera-sharing-guide',
+  },
+  {
+    pattern: /^\/secret-finder\/?$/,
+    target: '/guides/official-links-safety-guide',
+  },
+  { pattern: /^\/rebirth\/?$/, target: '/how-to-play' },
   {
     pattern: /^\/rebirth-guide\/?$/,
-    target: '/guides/rebirth-requirements-guide',
+    target: '/guides/beginner-guide',
   },
-  { pattern: /^\/tierlist\/?$/, target: '/guides/best-upgrades-money-guide' },
-  { pattern: /^\/tier-list\/?$/, target: '/guides/best-upgrades-money-guide' },
+  {
+    pattern: /^\/tierlist\/?$/,
+    target: '/guides/best-album-cover-ideas-guide',
+  },
+  {
+    pattern: /^\/tier-list\/?$/,
+    target: '/guides/best-album-cover-ideas-guide',
+  },
   {
     pattern: /^\/best-upgrades\/?$/,
-    target: '/guides/best-upgrades-money-guide',
+    target: '/guides/clean-album-cover-painting-guide',
   },
-  { pattern: /^\/ice-tycoon-2-codes\/?$/, target: '/codes' },
-  { pattern: /^\/ice-tycoon-2-code\/?$/, target: '/codes' },
+  { pattern: /^\/items(?:\/.*)?$/, target: '/tools' },
+  { pattern: /^\/badges(?:\/.*)?$/, target: '/gamepasses' },
+  { pattern: /^\/paint-an-album-codes\/?$/, target: '/codes' },
+  { pattern: /^\/paint-an-album-code\/?$/, target: '/codes' },
   { pattern: /^\/roblox\/?$/, target: '/download' },
 ];
 
@@ -65,7 +80,10 @@ export default async function middleware(req: NextRequest) {
   const hostHeader = req.headers.get('host');
   const hostname = hostHeader?.split(':')[0].toLowerCase();
   const forwardedProto = req.headers.get('x-forwarded-proto');
-  const productionHosts = new Set(['icetycoon-2.wiki', 'www.icetycoon-2.wiki']);
+  const productionHosts = new Set([
+    'paint-an-album.wiki',
+    'www.paint-an-album.wiki',
+  ]);
 
   if (
     hostname &&

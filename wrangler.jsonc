@@ -1,20 +1,20 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "main": ".open-next/worker.js",
-  "name": "icetycoon-2",
+  "name": "paint-an-album",
   "keep_vars": true,
   "compatibility_date": "2025-04-01",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   "routes": [
     {
-      "pattern": "icetycoon-2.wiki",
+      "pattern": "paint-an-album.wiki",
       "custom_domain": true,
-      "zone_name": "icetycoon-2.wiki"
+      "zone_name": "paint-an-album.wiki"
     },
     {
-      "pattern": "www.icetycoon-2.wiki",
+      "pattern": "www.paint-an-album.wiki",
       "custom_domain": true,
-      "zone_name": "icetycoon-2.wiki"
+      "zone_name": "paint-an-album.wiki"
     }
   ],
   "build": {

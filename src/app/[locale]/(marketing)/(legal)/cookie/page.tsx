@@ -10,9 +10,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   return constructMetadata({
-    title: 'Cookie Policy | Ice Tycoon 2 Wiki',
+    title: 'Cookie Policy | Paint an Album Wiki',
     description:
-      'How Ice Tycoon 2 Wiki uses essential cookies, analytics, and similar technologies.',
+      'How Paint an Album Wiki uses essential cookies, analytics, and similar technologies.',
     locale,
     pathname: '/cookie',
   });
@@ -20,27 +20,27 @@ export async function generateMetadata({
 
 export default function CookiePolicyPage() {
   return (
-    <div className="bg-[#0F1117] py-12 text-[#F8FAFC]">
+    <div className="bg-[#140F17] py-12 text-[#FFF8E8]">
       <Container className="max-w-3xl space-y-6 px-4">
         <h1 className="font-display text-4xl font-black">Cookie Policy</h1>
-        <p className="leading-8 text-[#CBD5E1]">
-          Ice Tycoon 2 Wiki uses essential cookies and similar technologies to
+        <p className="leading-8 text-[#D8C7D8]">
+          Paint an Album Wiki uses essential cookies and similar technologies to
           keep the site working, remember basic preferences, and understand
           aggregate traffic patterns.
         </p>
-        <p className="leading-8 text-[#CBD5E1]">
+        <p className="leading-8 text-[#D8C7D8]">
           Analytics or advertising partners may set limited cookies to measure
           page performance, ad delivery, referrers, and general device
           information. We use this data to improve guide pages and maintain the
           site.
         </p>
-        <p className="leading-8 text-[#CBD5E1]">
+        <p className="leading-8 text-[#D8C7D8]">
           You can block or delete cookies in your browser settings. Some
           features, such as language preferences or consent choices, may not
           work as expected when cookies are disabled.
         </p>
-        <p className="leading-8 text-[#CBD5E1]">
-          Questions about this policy can be sent to hello@icetycoon-2.wiki.
+        <p className="leading-8 text-[#D8C7D8]">
+          Questions about this policy can be sent to hello@paint-an-album.wiki.
         </p>
       </Container>
     </div>

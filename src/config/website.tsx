@@ -20,12 +20,12 @@ export const websiteConfig: WebsiteConfig = {
   },
   metadata: {
     images: {
-      ogImage: '/icetycoon2/og-image.png',
+      ogImage: '/paintalbum/og-image.png',
       logoLight: '/logo.png',
       logoDark: '/logo.png',
     },
     social: {
-      github: '',
+      github: 'https://github.com/kiraplane/paint-an-album',
       twitter: '',
       blueSky: '',
       discord: '',
@@ -75,8 +75,8 @@ export const websiteConfig: WebsiteConfig = {
   },
   mail: {
     provider: 'resend',
-    fromEmail: 'Ice Tycoon 2 Wiki <hello@icetycoon-2.wiki>',
-    supportEmail: 'hello@icetycoon-2.wiki',
+    fromEmail: 'Paint an Album Wiki <hello@paint-an-album.wiki>',
+    supportEmail: 'hello@paint-an-album.wiki',
   },
   newsletter: {
     enable: false,
