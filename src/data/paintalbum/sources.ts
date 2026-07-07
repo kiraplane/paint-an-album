@@ -1,7 +1,7 @@
 import type { DataSource } from './types';
 
-export const CHECKED_AT = '2026-07-06';
-export const OFFICIAL_CHECKED_AT = '2026-07-06';
+export const CHECKED_AT = '2026-07-07';
+export const OFFICIAL_CHECKED_AT = '2026-07-07';
 
 export const officialGameFacts = {
   name: 'Paint an Album',
