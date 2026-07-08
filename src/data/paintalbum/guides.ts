@@ -99,6 +99,7 @@ export const relatedRouteLabels: Record<string, string> = {
   '/guides/paint-an-album-vs-paint-to-hide-guide':
     'Paint an Album vs Paint To Hide',
   '/guides/official-links-safety-guide': 'Official Links Safety',
+  '/guides/community-status-safety-faq': 'Community Status FAQ',
 };
 
 export const guides: Guide[] = [
@@ -825,6 +826,82 @@ export const guides: Guide[] = [
         question: 'Who made Paint an Album?',
         answer:
           'The current Roblox API data lists the creator as the Roblox group We the real devs.',
+      },
+    ],
+  },
+  {
+    slug: 'community-status-safety-faq',
+    title: 'Paint an Album Community Status and Safety FAQ',
+    seoTitle:
+      'Paint an Album Community Status FAQ - Hacks, Discord and Safe Play',
+    seoDescription:
+      'Check Paint an Album community status safely: hacked claims, Discord confusion, fake scripts, official Roblox links, and what players should avoid.',
+    summary:
+      'A safety FAQ for players seeing hacked, Discord, or script search results. It explains what to verify, what to ignore, and how to keep playing through the official Roblox page.',
+    category: 'Safety',
+    difficulty: 'Beginner',
+    coverImageUrl: iconCover,
+    publishedAt: CHECKED_AT,
+    updatedAt: CHECKED_AT,
+    sourceStrategy: 'community_crosscheck',
+    sourceNotes:
+      'Created from July 2026 community-safety search demand and official Roblox page checks. It avoids exploit instructions and only explains safe verification steps.',
+    videoSearchQueries: [
+      'Paint an Album hacked',
+      'Paint an Album Discord deleted',
+      'Paint an Album Roblox safe link',
+    ],
+    tags: ['Safety', 'Community', 'Discord'],
+    relatedRoutes: [
+      '/download',
+      '/guides/official-links-safety-guide',
+      '/codes',
+      '/updates',
+    ],
+    body: [
+      {
+        heading: 'Use community posts as alerts, not instructions',
+        paragraphs: [
+          'Fast-growing Roblox creative games can attract hacked, script, Discord, or shutdown rumors. Those posts are useful as warnings that players are confused, but they are not a safe reason to install anything or paste executor code.',
+          'If you see a claim that the game was hacked or that a Discord vanished, verify the official Roblox experience first. Check the creator, place ID, and current game page rather than following a mirror or file link from a comment.',
+        ],
+        bullets: [
+          'Open Paint an Album from the official Roblox page.',
+          'Do not use scripts, executors, browser forms, or free-Robux pages.',
+          'Do not log in through a Discord or comment link that claims to restore progress.',
+          'Treat shutdowns as possible updates until official game data says otherwise.',
+        ],
+      },
+      {
+        heading: 'What to do if the lobby looks wrong',
+        paragraphs: [
+          'First, confirm you are in the correct experience. If the creator, place ID, or core loop does not match Paint an Album, leave and use the official link. If the page is correct but the lobby behaves strangely, wait for Roblox or the developer to stabilize it instead of chasing unofficial fixes.',
+          'Creative progress is more valuable than a rumor. Avoid testing risky links on your main Roblox account, especially pages that ask for credentials or browser permissions.',
+        ],
+      },
+      {
+        heading: 'Safe topics this wiki will cover',
+        paragraphs: [
+          'This site will cover official links, painting routes, album search, gallery habits, gamepasses, update checks, and code status when reliable codes exist. It will not provide exploit scripts, private servers, fake reward forms, or clone-game shortcuts.',
+          'If a community issue becomes official, it belongs on the update or safety page with clear wording. Until then, the best advice is conservative: play through Roblox, avoid shortcuts, and keep account details private.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'Is Paint an Album hacked?',
+        answer:
+          'This site does not publish rumor claims as fact. Use the official Roblox page and wait for visible developer or platform signals before trusting community claims.',
+      },
+      {
+        question: 'Where is the safe Paint an Album link?',
+        answer:
+          'Use the official Roblox experience linked from this site’s download and safety pages.',
+      },
+      {
+        question: 'Can I use scripts to paint faster?',
+        answer:
+          'No. Scripts, executors, and third-party shortcuts can risk your account and are not supported here.',
       },
     ],
   },
