@@ -1,7 +1,7 @@
 import type { DataSource } from './types';
 
-export const CHECKED_AT = '2026-07-11';
-export const OFFICIAL_CHECKED_AT = '2026-07-11';
+export const CHECKED_AT = '2026-07-14';
+export const OFFICIAL_CHECKED_AT = '2026-07-14';
 
 export const officialGameFacts = {
   name: 'Paint an Album',
@@ -18,11 +18,11 @@ export const officialGameFacts = {
   genreSecondary: 'Coloring & Drawing',
   status: 'Live Roblox experience',
   createdAt: '2025-01-05T03:07:06.643Z',
-  updatedAt: '2026-07-06T07:38:09.8997495Z',
+  updatedAt: '2026-07-14T06:25:48.3390088Z',
   maxPlayers: 4,
-  activePlayersAtCheck: 2350,
-  visitsAtCheck: 12939346,
-  favoritesAtCheck: 81401,
+  activePlayersAtCheck: 2894,
+  visitsAtCheck: 15766193,
+  favoritesAtCheck: 97761,
   upVotesAtCheck: 26259,
   downVotesAtCheck: 4186,
   officialRobloxUrl:
