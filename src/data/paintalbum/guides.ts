@@ -917,6 +917,7 @@ export const allCoreRoutes = [
   '/guides',
   '/how-to-play',
   '/album-search',
+  '/map-and-plots',
   '/tools',
   '/gamepasses',
   '/download',

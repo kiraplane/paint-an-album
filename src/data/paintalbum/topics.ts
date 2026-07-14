@@ -89,6 +89,20 @@ export const topicPages: Record<string, TopicPage> = {
           'This is especially useful for photo-heavy covers. A simpler alternate image can save an hour of fighting tiny details.',
         ],
       },
+      {
+        heading: 'Record the useful album fields before painting',
+        paragraphs: [
+          'For repeatable searches, keep the artist, album title, release year, edition, dominant colors, text density, and composition difficulty together. Edition matters because deluxe and remastered covers can return different art for the same album name.',
+          'A practical difficulty note should describe the image: easy for large shapes and two or three colors, medium for layered silhouettes, and hard for faces, gradients, or dense typography. That turns the search result into a painting decision instead of a thumbnail gallery.',
+        ],
+        bullets: [
+          'Artist and exact album title',
+          'Release year or edition when search results conflict',
+          'Dominant palette and background color',
+          'Text density and smallest important detail',
+          'Suggested plot size and estimated difficulty',
+        ],
+      },
     ],
     faq: [
       {
@@ -100,6 +114,64 @@ export const topicPages: Record<string, TopicPage> = {
         question: 'Can I paint any artist?',
         answer:
           'The official description says the game searches a live database for almost any album cover, but availability can still vary by search result.',
+      },
+    ],
+  },
+  mapAndPlots: {
+    route: '/map-and-plots',
+    label: 'Map and Plots',
+    eyebrow: 'Lobby Navigation',
+    title: 'Paint an Album Map and Lobby Plots',
+    seoTitle: 'Paint an Album Map - Lobby Plots, Painting Areas and New Map',
+    seoDescription:
+      'Navigate the Paint an Album map, claim one of four lobby plots, find painting and gallery areas, and handle plot or autosave issues after the New Map update.',
+    summary:
+      'Use the lobby as a short workflow: claim a free plot, load a reference, paint in passes, verify autosave, then move to the gallery or camera areas.',
+    image: commonImage,
+    updatedAt: CHECKED_AT,
+    featuredRoutes: [
+      '/how-to-play',
+      '/album-search',
+      '/guides/multiplayer-lobby-autosave-guide',
+    ],
+    sections: [
+      {
+        heading: 'Claim one of the four lobby plots',
+        paragraphs: [
+          'Current competitor and gameplay references consistently show four paint plots in the shared lobby. Walk to an unclaimed station and use its prompt before loading an album so another player does not take the space while you browse.',
+          'In a full server, join a new public server instead of painting over another player\'s area. For co-op, agree which plot owns the reference and which players handle background, silhouette, color matching, and details.',
+        ],
+      },
+      {
+        heading: 'A route through the New Map',
+        paragraphs: [
+          'Start at spawn, identify the four plot stations, then locate album search, painting tools, gallery or sharing space, and camera controls. The New Map label confirms a layout change, so older videos should be used for mechanics rather than exact walking directions.',
+        ],
+        bullets: [
+          'Claim a plot before opening a long album search.',
+          'Load the reference and confirm it belongs to your plot.',
+          'Block the background before crossing the lobby for tools or photos.',
+          'Verify the save indicator before leaving or switching servers.',
+        ],
+      },
+      {
+        heading: 'Fix missing plots or stale layouts',
+        paragraphs: [
+          'If the map does not match current screenshots, finish or save the active painting, then rejoin a fresh server. Roblox servers can remain on an older build for a short time after an update.',
+          'If a plot prompt fails, move away, reset once, and test an empty plot. Do not use scripts to force ownership or duplicate another player\'s canvas.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'How many plots are in the Paint an Album lobby?',
+        answer:
+          'Current map references show four lobby paint plots, so a full server may require joining another lobby.',
+      },
+      {
+        question: 'Why does my lobby look different from a video?',
+        answer:
+          'The game has a New Map update and old servers or older videos may show a previous layout. Rejoin and follow current in-game labels.',
       },
     ],
   },
@@ -267,6 +339,13 @@ export const topicPages: Record<string, TopicPage> = {
         heading: 'Current watch areas',
         paragraphs: [
           'Codes are the biggest watch area because search results around Roblox paint games can mix multiple experiences. Gamepass behavior is another watch area because third-party listings show pass names but not enough official detail to describe every effect confidently.',
+        ],
+      },
+      {
+        heading: 'New Map coverage',
+        paragraphs: [
+          'The current Roblox title and competitor coverage identify a New Map update. The map-and-plots page now tracks the four lobby plots, current navigation workflow, stale-server checks, and the safest way to verify that autosave completed before leaving.',
+          'Until official patch notes publish a full room-by-room changelog, this site will describe only visible layout and workflow changes that can be reproduced in current gameplay.',
         ],
       },
     ],

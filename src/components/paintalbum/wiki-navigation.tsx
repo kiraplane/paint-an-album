@@ -70,6 +70,7 @@ const wikiNavGroups: WikiNavGroup[] = [
     icon: Brush,
     links: [
       { href: '/tools', label: 'Tools and Workflow' },
+      { href: '/map-and-plots', label: 'Map and Lobby Plots' },
       {
         href: '/guides/clean-album-cover-painting-guide',
         label: 'Clean Cover Painting',
