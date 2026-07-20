@@ -86,6 +86,7 @@ export const relatedRouteLabels: Record<string, string> = {
   '/gamepasses': 'Gamepasses Hub',
   '/download': 'Official Roblox Page',
   '/updates': 'Update Tracker',
+  '/discord': 'Discord and Community Status',
   '/guides/beginner-guide': 'Beginner Guide',
   '/guides/album-search-live-database-guide': 'Album Search Guide',
   '/guides/clean-album-cover-painting-guide': 'Clean Cover Painting',
@@ -922,6 +923,7 @@ export const allCoreRoutes = [
   '/gamepasses',
   '/download',
   '/updates',
+  '/discord',
   '/disclaimer',
   ...guides.map((guide) => `/guides/${guide.slug}`),
 ];

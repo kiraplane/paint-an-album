@@ -36,7 +36,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
                 route === Routes.Tools ||
                 route === Routes.Gamepasses ||
                 route === Routes.Download ||
-                route === Routes.Updates
+                route === Routes.Updates ||
+                route === Routes.Discord
               ? 0.9
               : route.startsWith('/guides/')
                 ? 0.85

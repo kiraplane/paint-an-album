@@ -100,6 +100,7 @@ const wikiNavGroups: WikiNavGroup[] = [
     title: 'Safety',
     icon: ShieldCheck,
     links: [
+      { href: '/discord', label: 'Discord Status' },
       {
         href: '/guides/official-links-safety-guide',
         label: 'Official Links Safety',

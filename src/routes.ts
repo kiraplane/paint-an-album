@@ -21,6 +21,7 @@ export enum Routes {
   Gamepasses = '/gamepasses',
   Download = '/download',
   Updates = '/updates',
+  Discord = '/discord',
   BeginnerGuide = '/guides/beginner-guide',
   CodesGuide = '/guides/codes-status-guide',
   AlbumSearchGuide = '/guides/album-search-live-database-guide',
